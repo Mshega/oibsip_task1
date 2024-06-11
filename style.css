@@ -1,161 +1,188 @@
-*{
-    padding:0;
+/* Reset default styling for all elements */
+* {
+    padding: 0;
     margin: 0;
     text-decoration: none;
     list-style: none;
     box-sizing: border-box;
- 
- }
- .data{
-     background: url(back.jpg);
-     height:100vh;     
-     background-size: cover;
-     background-repeat: no-repeat;
- 
- }
- nav{
-     background: #abbcf3;
-     line-height: 80px;
-     position: fixed;
-     width: 100%;
- }
- label{
-     line-height: 80px;
-     font-size: 30px;
-     color: rgb(224, 66, 66);
-     margin-left: 50px;
-     font-weight: 200;
-     cursor: pointer;
- 
- }
- nav ul{
-     float: right;
-     margin-right: 20px;
- }
- nav li{
-     line-height: 80px;
-     margin: 0 10px;
- }
- nav ul a{
-     color: rgb(245, 170, 170);
-     font-size: 20px;
-     padding: 6px 15px;
-     font-weight: 600;
-     background-color: rgb(162, 156, 219);
-     border-radius: 3px;
- }
- nav ul a:hover{
-     background-color: rgb(183, 174, 255);
-     color: rgb(175, 20, 20);
-     transition: 0.5s;
- }
- .side-menu{
-     position: fixed;
-     background: #879ad6;
-     width: 250px;
-     height: 100%;
-     margin-top: 80px;
- }
- .side-menu center img{
-     height: 120px;
-     width: 120px;
-     border-radius: 50%;
-     margin-top: 30;
-     border: 3px solid rgb(212, 75, 75);
-     
- }
- .side-menu center h2{
-     color: rgb(230, 76, 76);
- }
- .side-menu a{
-     display: block;
-     line-height: 60px;
-     transition: 0.5s;
-     
- 
- }
- .side-menu a:hover{
-     background: rgb(105, 132, 221);
-     padding-left: 20px;
- }
- .side-menu span{
-     font-size: 20px;
-     margin-left: 10px;
-     color: rgb(90, 26, 26);
- }
- .side-menu i{
-     font-size: 20px;
-     margin-left: 20px;
-     color: rgb(116, 20, 20);
- 
- 
- }
- nav .menu-bar{
-     float: right;
-     margin-top: 20px;
-     display: none;
-     margin-right: 20px;
- }
- #menu{
-     display: none;
- 
- }
- .side-menu .Logout{
-     display: none;
- 
- }
- @media (max-width:850px){
-     .side-menu a span{
-         display: none;
-     }
-     .side-menu center{
-         display: none;
-     }
-     .side-menu{
-         width: 100px;
-     }
-     .side-menu a{
-         display: block;
-         line-height: 80px;
-         text-align: center;
-         margin-left: 0;
-         font-size: 35px;
-     }
-     .data{
-         margin-left: 100px;
-     }
- 
- }
- @media (max-width:650px){
-     .data{
-         display: none 
-     }
-     nav ul{
-         display: none;
-     }
-     .side-menu{
-         width: 100%;
-         text-align: center;
-         left:100% ;
-         background-color: #69696d;
-         transition: all 0.5s;
-     }
-     .side-menu a{
-         display: none;
-     }
-     .side-menu span{
-         display:block;
- 
-     }
-     .side-menu .Logout{
-         display: block;
-     }
-     nav .menu-bar{
-         display: block;
-     }
- }
- #menu:checked ~ .side-menu{
-     left: 0;
- 
- 
- }
+}
+
+/* Styling for the data section with a background image */
+.data {
+    background: url(back.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* Styling for the navigation bar */
+nav {
+    background: #abbcf3;
+    line-height: 80px;
+    position: fixed;
+    width: 100%;
+}
+
+/* Styling for labels within the navigation bar */
+label {
+    line-height: 80px;
+    font-size: 30px;
+    color: rgb(224, 66, 66);
+    margin-left: 50px;
+    font-weight: 200;
+    cursor: pointer;
+}
+
+/* Styling for the unordered list within the navigation bar */
+nav ul {
+    float: right;
+    margin-right: 20px;
+}
+
+/* Styling for the list items within the navigation bar */
+nav li {
+    line-height: 80px;
+    margin: 0 10px;
+}
+
+/* Styling for the links within the navigation bar */
+nav ul a {
+    color: rgb(245, 170, 170);
+    font-size: 20px;
+    padding: 6px 15px;
+    font-weight: 600;
+    background-color: rgb(162, 156, 219);
+    border-radius: 3px;
+}
+
+/* Hover effect for navigation links */
+nav ul a:hover {
+    background-color: rgb(183, 174, 255);
+    color: rgb(175, 20, 20);
+    transition: 0.5s;
+}
+
+/* Styling for the side menu */
+.side-menu {
+    position: fixed;
+    background: #879ad6;
+    width: 250px;
+    height: 100%;
+    margin-top: 80px;
+}
+
+/* Styling for the profile image within the side menu */
+.side-menu center img {
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    margin-top: 30px;
+    border: 3px solid rgb(212, 75, 75);
+}
+
+/* Styling for the username within the side menu */
+.side-menu center h2 {
+    color: rgb(230, 76, 76);
+}
+
+/* Styling for the links within the side menu */
+.side-menu a {
+    display: block;
+    line-height: 60px;
+    transition: 0.5s;
+}
+
+/* Hover effect for side menu links */
+.side-menu a:hover {
+    background: rgb(105, 132, 221);
+    padding-left: 20px;
+}
+
+/* Styling for the span elements within the side menu links */
+.side-menu span {
+    font-size: 20px;
+    margin-left: 10px;
+    color: rgb(90, 26, 26);
+}
+
+/* Styling for the icons within the side menu links */
+.side-menu i {
+    font-size: 20px;
+    margin-left: 20px;
+    color: rgb(116, 20, 20);
+}
+
+/* Styling for the menu bar icon within the navigation bar */
+nav .menu-bar {
+    float: right;
+    margin-top: 20px;
+    display: none;
+    margin-right: 20px;
+}
+
+/* Hide the checkbox by default */
+#menu {
+    display: none;
+}
+
+/* Hide the Logout link within the side menu by default */
+.side-menu .Logout {
+    display: none;
+}
+
+/* Media query for screens with a maximum width of 850px */
+@media (max-width: 850px) {
+    .side-menu a span {
+        display: none;
+    }
+    .side-menu center {
+        display: none;
+    }
+    .side-menu {
+        width: 100px;
+    }
+    .side-menu a {
+        display: block;
+        line-height: 80px;
+        text-align: center;
+        margin-left: 0;
+        font-size: 35px;
+    }
+    .data {
+        margin-left: 100px;
+    }
+}
+
+/* Media query for screens with a maximum width of 650px */
+@media (max-width: 650px) {
+    .data {
+        display: none;
+    }
+    nav ul {
+        display: none;
+    }
+    .side-menu {
+        width: 100%;
+        text-align: center;
+        left: 100%;
+        background-color: #69696d;
+        transition: all 0.5s;
+    }
+    .side-menu a {
+        display: none;
+    }
+    .side-menu span {
+        display: block;
+    }
+    .side-menu .Logout {
+        display: block;
+    }
+    nav .menu-bar {
+        display: block;
+    }
+}
+
+/* Show the side menu when the checkbox is checked */
+#menu:checked ~ .side-menu {
+    left: 0;
+}
